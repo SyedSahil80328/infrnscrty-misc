@@ -1,0 +1,1 @@
+This is a product cipher with the combination of both Hill Cipher and Rail Fence Cipher. Both are Substitutional and Transpositional Ciphers Respectively. This makes your message very hard to cryptanalyze it.
