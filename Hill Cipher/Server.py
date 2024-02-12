@@ -4,7 +4,7 @@ from NumericalUtilities import determinant
 import socket
 import json
 
-def start_server():
+def startServer():
     # Create a socket object
     serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -20,18 +20,24 @@ def start_server():
     while True:
         # Wait for a connection from the client
         clientSocket, clientAddress = serverSocket.accept()
-        print(f"Accepted connection from {clientAddress}")
+        print(f"\nAccepted connection from {clientAddress}")
 
         # Handle the client's request
-        handle_client(clientSocket)
+        e = handleClient(clientSocket)
 
         # Close the connection
         clientSocket.close()
+        if not e:
+            serverSocket.close()
+            print("Client wants to exit. Shutting down the server.")
+            break
 
-def handle_client(clientSocket):
+def handleClient(clientSocket):
     # Receive data from the client
     rawData = clientSocket.recv(1024).decode('utf-8')
-    print(rawData)
+    if rawData == "EXIT":
+        return 0
+
     data = json.loads(rawData)
     cipherText = data["string"]
     keyMatrix = json.loads(data["matrix"])
@@ -43,6 +49,7 @@ def handle_client(clientSocket):
     plainText = decode(cipherText, keyMatrix, det)
     # Echo the data back to the client
     clientSocket.sendall(plainText.encode('utf-8'))
+    return 1
 
 if __name__ == "__main__":
-    start_server()
+    startServer()
