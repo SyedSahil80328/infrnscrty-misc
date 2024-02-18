@@ -1,11 +1,12 @@
 # Security Encryption
-I have developed this repository to post some piece of python programs which were used for encryption and decryption with an interactive client and server architecture.
+I have developed this repository to post some piece of python programs which were used for encryption and decryption with an interactive client and server architecture (Only for Hill and Product Cipher).
 
-The working is the input is given on clien program and that input is encrypted with some key given by the user. Then it is sent to server along with the key. Finally the server decrypts the cipher text and sends to client.
+The working is the input is given on client program and that input is encrypted with some key given by the user. Then it is sent to server along with the key. Finally the server decrypts the cipher text and sends to client.
 
 # Encryption Algorithms put so far
-1. Hill Cipher
-2. Product Cipher (Combination of Rail fence and Hill)
+1. Hill Cipher.
+2. Product Cipher (Combination of Rail fence and Hill).
+3. Simple Data Encryption Standard.
 
 # Usage
 To download only specified directory, go to [DownGit](https://minhaskamal.github.io/DownGit/#/home) and specify the path of that directory. For whole repository, you can git clone it.
@@ -76,6 +77,4 @@ Accepted connection from ('127.0.0.1', 63635)
 Client wants to exit. Shutting down the server.
 ```
 In the same way, the remaining algorithms is run depending on the input requirements.
-
-
 
