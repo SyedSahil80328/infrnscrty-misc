@@ -30,10 +30,29 @@ Note: Editing `Credentials.txt` has some constraints.
 Here, I have pasted the sample output for it's better usage.
 
 ## Gathering Input from the file
-![Input/Output Process](IO%20process.png)
+![Input Process](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/InputReading.png)
+
+## Permutations and key generation
+![Round Keys and Permutations](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/RoundKeysAndPermutations.png)
 
 ## Encryption Process
-![Encryption Process](Encryption.png)
+![Iteration 1-2](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/EncryptionOne.png)
+![Iteration 3-4](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/EncryptionTwo.png)
+![Iteration 5-6](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/EncryptionThree.png)
+![Iteration 7-8](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/EncryptionFour.png)
+![Iteration 9-10](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/EncryptionFive.png)
+![Iteration 11-12](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/EncryptionSix.png)
+![Iteration 13-14](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/EncryptionSeven.png)
+![Iteration 15-16](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/EncryptionEight.png)
+![Final Output](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/FinalEncryption.png)
 
 ## Decryption Process
-![Decryption Process](Decryption.png)
+![Iteration 1-2](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/DecryptionOne.png)
+![Iteration 3-4](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/DecryptionTwo.png)
+![Iteration 5-6](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/DecryptionThree.png)
+![Iteration 7-8](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/DecryptionFour.png)
+![Iteration 9-10](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/DecryptionFive.png)
+![Iteration 11-12](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/DecryptionSix.png)
+![Iteration 13-14](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/DecryptionSeven.png)
+![Iteration 15-16](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/DecryptionEight.png)
+![Final Output](https://github.com/SyedSahil80328/information-security/blob/main/DES/DESOutput/FinalDecryption.png)
