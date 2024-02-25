@@ -10,21 +10,34 @@ This directory consists of two python programs for execution.
 
 It also consists of three files for required data. All contains numbers separated by commas.
 1. `Credentials.txt`: Provides plain text and key.
-  - First line is the 64 bit plain text.
-  - Second line is the 64 bit key.
+     - First line is the 64 bit plain text.
+     - Second line is the 64 bit key.
 2. `Permutations.txt`: Provides permutation data for re-ordering.
-  - First line is the Permutation Choice One for key (64-56).
-  - Second line is the Permutation Choice Two for key (56-48).
-  - Third line is the Initial Permutation (64-64).
-  - Fourth line is the Expansion Permutation (32-48).
-  - Fifth line is the Straight Permutation (16-16).
-  - Sixth line is the Inverse Permutation (64-64).
+     - First line is the Permutation Choice One for key (64-56).
+     - Second line is the Permutation Choice Two for key (56-48).
+     - Third line is the Initial Permutation (64-64).
+     - Fourth line is the Expansion Permutation (32-48).
+     - Fifth line is the Straight Permutation (16-16).
+     - Sixth line is the Inverse Permutation (64-64).
 3. `SubstitutionBoxes.txt`: Contains 8 contracting 8-6 substitution boxes (Each are 4x16 matrix). So, 32 lines of this file makes 8 S Boxes. 
 
 Note: Editing `Credentials.txt` has some constraints.
 1. Both lines must be binary.
 2. Both lines must have exactly 64 bits.
-3. No more or less lines than two is considered.
+3. Needs exactly two lines.
+4. Misordering of inputs will result in unexpected encryption (Plain text will become key and vice-versa).
+
+It is recommended not to edit `Permutations.txt` and `SubstitutionBoxes.txt`. If it is required, then handle the modification carefully.
+1. `SubstitutionBoxes.txt` must have 32 lines with 16 unique values each ranging from 0 to 15 in random order separated by commas.
+2. Inclusion of whitespaces between values in both files will result in errors.
+3. `Permutations.txt` must have 6 lines with following specifications:
+     - First line must have 56 unique values from 1 to 64.
+     - Second line must have 48 unique values from 1 to 56.
+     - Third line must have 64 unique values from 1 to 64.
+     - Fourth line must have 48 values from 1 to 32.
+     - Fifth line must have 16 unique values from 1 to 16.
+     - Sixth line must have 64 unique values from 1 to 64.
+     - All lines must have values separated by commas without whitespaces.
 
 # Sample Input and Output
 Here, I have pasted the sample output for it's better usage.
