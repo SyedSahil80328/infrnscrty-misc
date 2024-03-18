@@ -7,6 +7,8 @@ The working is the input is given on client program and that input is encrypted 
 1. Hill Cipher.
 2. Product Cipher (Combination of Rail fence and Hill).
 3. Simple Data Encryption Standard.
+4. Data Encryption Standard.
+5. Rivest-Shamir-Adleman (RSA).
 
 # Usage
 To download only specified directory, go to [DownGit](https://minhaskamal.github.io/DownGit/#/home) and specify the path of that directory. For whole repository, you can git clone it.
